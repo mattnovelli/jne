@@ -9,7 +9,7 @@ export default function About() {
     <div className="grid md:grid-cols-2 md:gap-12 gap-4 min-h-screen px-12 py-24 md:max-w-7xl mx-auto! ">
       <div className="flex flex-col gap-8">
         <img
-          src="/images/about/Headshot.png"
+          src="/images/about/headshot.png"
           alt="Photo of Julia Eversmann"
           className="rounded-3xl"
         />

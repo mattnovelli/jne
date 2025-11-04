@@ -21,8 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/soz6lwi.css" />
+        <link rel="icon" href="images/site/favicon_lizard.svg" />
       </head>
-      <body className="antialiased">
+      <body className="antialiased md:p-0 p-3.5!">
         <TurbulenceFilter />
         <Header />
         {children}

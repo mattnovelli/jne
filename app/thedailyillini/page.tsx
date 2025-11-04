@@ -24,8 +24,13 @@ export default function TheDailyIllini() {
 
       <ProjectContent>
         <ProjectParagraph
-          title="overview"
-          content="as senior art director at the daily illini, i was responsible for the visual identity and design direction of the university of illinois' student newspaper. my role included designing covers, managing layout teams, creating style guides, and establishing consistent brand standards across all publications."
+          title="brief"
+          content="As Senior Art Director at The Daily Illini, I was responsible for the complete visual identity and design direction of the University of Illinois' student newspaper. The role required developing brand standards, designing engaging layouts, creating special issue concepts, and managing a team of designers while maintaining consistency across all print and digital touchpoints."
+        />
+
+        <ProjectParagraph
+          title="result"
+          content="I modernized the newspaper's visual identity through comprehensive style guides, dynamic page layouts, and innovative design solutions. My work included redesigning the masthead, creating modular layout systems, developing color-coded section identities, and producing award-winning special issues. I successfully balanced editorial needs with visual impact, ensuring readability while creating engaging designs that increased reader engagement and maintained the publication's reputation as the university's premier news source."
         />
 
         <ProjectImage
@@ -33,19 +38,9 @@ export default function TheDailyIllini() {
           alt="Daily Illini newspaper covers"
         />
 
-        <ProjectParagraph
-          title="brand development"
-          content="i worked to modernize the daily illini's visual identity while respecting its long-standing tradition as the university's primary news source. this involved creating comprehensive design guidelines, establishing typography standards, and developing a cohesive color palette that would work across both print and digital platforms."
-        />
-
         <ProjectImage
           src="/images/work/thedailyillini/designguide.webp"
           alt="Daily Illini design guide"
-        />
-
-        <ProjectParagraph
-          title="layout design"
-          content="one of my primary responsibilities was designing engaging page layouts that would draw readers in while maintaining excellent readability. i focused on creating dynamic spreads that balanced text, images, and white space effectively, ensuring that important stories received the visual prominence they deserved."
         />
 
         <ProjectImage

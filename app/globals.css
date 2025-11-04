@@ -17,7 +17,7 @@
 
 :root {
   /* Pretty colors */
-  --background-color: #febe14;
+  --background-color: #f6f4ee;
   --text-color: black;
   --accent-red: #ef382e;
   --accent-orange: #f47733;
@@ -119,4 +119,16 @@ p {
 
 .theme-class-creature {
   background-color: var(--accent-green);
+}
+
+.theme-hi-ai {
+  background-color: #54007e;
+}
+
+.theme-ltc-rebrand {
+  background-color: #27aae1;
+}
+
+.theme-bugs-nextdoor {
+  background-color: #9c0d00;
 }

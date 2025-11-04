@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex flex-col  py-8!  mb-16! md:mx-12! ">
+      <header className="flex flex-col  py-8!  md:mx-12! ">
         <div className="flex justify-between  items-center">
           <div id="turbulence" className="relative">
             <Image
