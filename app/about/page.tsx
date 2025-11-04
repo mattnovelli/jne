@@ -13,30 +13,30 @@ export default function About() {
           alt="Photo of Julia Eversmann"
           className="rounded-3xl"
         />
-        <img
+        {/* <img
           src="/images/about/donut_cutout.webp"
           alt="Enzo the rat terrier wearing a donut costume"
           className="rounded-3xl w-sm md:block! hidden!"
-        />
+        /> */}
       </div>
 
       <div className="">
-        <h1 id="turbulence">about me</h1>
-        <p>
+        <h1 id="turbulence ">about me</h1>
+        <p className="mt-8!">
           Hi, I'm Julia! I'm a graphic designer based in Illinois, specializing
           in solving design problems and creating effective, long-lasting
           solutions. Accessibility and user-experience are the foundation of
           everything I do. I enjoy all design mediums, but I have a special love
           for organizing complex content into intentional, readable typography.
         </p>
-        <p className="mt-8!">Aside from design, talk to me about:</p>
+        {/* <p className="mt-8!">Aside from design, talk to me about:</p>
         <ul className="list-disc! ml-6! mt-2! mb-8! text-2xl">
           <li>Bugs</li>
           <li>Enzo the dog</li>
           <li>
             My secret ability to track down fiestaware at the thrift store
           </li>
-        </ul>
+        </ul> */}
         {/* <p>
           hi! i'm julia, a designer based in illinois. i have a passion for
           connecting and collaborating with people, and i genuinely fall in love

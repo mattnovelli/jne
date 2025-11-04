@@ -18,14 +18,13 @@ export default function LTCRebrand() {
       />
 
       <ProjectContent>
-        <ProjectParagraph
-          title="brief"
-          content="Less than a month into my role as Multimedia Designer at the Learning Technology Center, I was assigned a big task: leading a full rebrand of the organization's visual identity. The LTC serves all public K–12 schools, districts, and educators across the state through a wide range of tech initiatives and professional learning programs. Its existing visual identity had been created several years before, and the organization had quickly outgrown it. As the state's primary leader in K12 edtech, its brand needed to reflect the modern services it had to offer, but also maintain recognition with its already existing audience."
-        />
-
         <ProjectImage
           src="/images/work/ltc-rebrand/Combomark - Light Blue, Dark Text.svg"
           alt="New LTC logo design with combomark"
+        />
+        <ProjectParagraph
+          title="brief"
+          content="Less than a month into my role as Multimedia Designer at the Learning Technology Center, I was assigned a big task: leading a full rebrand of the organization's visual identity. The LTC serves all public K–12 schools, districts, and educators across the state through a wide range of tech initiatives and professional learning programs. Its existing visual identity had been created several years before, and the organization had quickly outgrown it. As the state's primary leader in K12 edtech, its brand needed to reflect the modern services it had to offer, but also maintain recognition with its already existing audience."
         />
 
         <ProjectImage

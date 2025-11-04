@@ -84,8 +84,8 @@ export default function Home() {
 
   return (
     <div className=" flex px-12 flex-col">
-      <div id="turbulence" className="text-center ">
-        <h1 className="mt-0 mb-0 font-black! md:text-7xl! text-base">
+      <div id="turbulence" className="text-center  ">
+        <h1 className="mt-0 mb-0 font-black! md:text-7xl! text-base leading-relaxed!">
           julia eversmann
         </h1>
         <h2 className="mt-[0.5vw] md:mt-[4vw] mb-0">graphic designer</h2>

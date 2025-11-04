@@ -21,14 +21,14 @@ export default function ProjectIntro({
   return (
     <div
       style={{ backgroundColor: "var(--background-color)" }}
-      className="grid md:grid-cols-3 grid-cols-1 gap-5 grid-rows-1 md:mx-12!"
+      className="grid md:grid-cols-3 grid-cols-1 gap-12 grid-rows-1 mb-14! "
     >
       <div className="col-span-2">
-        <h1 className="leading-17 font-black">{title}</h1>
+        <h1 className="leading-relaxed! font-black">{title}</h1>
         <p>{description}</p>
       </div>
-      <div className="grid grid-rows-2 grid-cols-1 gap-6">
-        <div className="flex flex-col gap-2">
+      <div className="grid grid-rows-2 grid-cols-1 gap-6 justify-end!">
+        <div className="flex flex-col gap-2 ">
           <h3 className="font-black! text-4xl!">Skills</h3>
 
           <div className="flex flex-row flex-wrap gap-2">
@@ -38,7 +38,7 @@ export default function ProjectIntro({
           </div>
         </div>
         {tools && (
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 ">
             <h3 className="font-black! text-4xl!">Tools</h3>
             <div>
               <div className="flex flex-row  flex-wrap gap-2 ">
