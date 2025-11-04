@@ -8,7 +8,7 @@ interface ProjectLayoutProps {
 
 export default function ProjectLayout({ children }: ProjectLayoutProps) {
   return (
-    <div className="min-h-screen  md:max-w-7xl mx-auto!">
+    <div className="min-h-screen  md:max-w-4xl! mx-auto! mb-30!">
       <TurbulenceFilter />
 
       {children}
