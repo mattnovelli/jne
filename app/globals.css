@@ -12,15 +12,111 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+:root {
+  /* Pretty colors */
+  --background-color: #febe14;
+  --text-color: black;
+  --accent-red: #ef382e;
+  --accent-orange: #f47733;
+  --accent-green: #42b658;
+  --accent-blue: #5073b8;
+  --accent-purple: #a14d9d;
+  --accent-pink: #ef4988;
+
+  /* Units */
+  --default-padding: 3em;
+  --border-thickness: 2px;
+  --border-radius: 10px;
+
+  /* Setting some defaults */
+  background-color: var(--background-color);
+  font-family: "elza-narrow", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  font-family: "elza-narrow", sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  max-width: none;
+}
+
+h1 {
+  font-family: "elza-narrow", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin: 0;
+  /* text-align: center; */
+}
+
+p {
+  font-family: "elza-narrow", sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+/* SVG filter for turbulence effect */
+#turbulence {
+  filter: url(#turbulence-filter);
+}
+
+/* Custom button styles */
+.rounded-button {
+  transition: ease-in-out 0.2s;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 10px 10px var(--text-color);
+  font-family: "elza-narrow", sans-serif;
+  font-size: 120%;
+  outline: 0;
+  border: none;
+  color: white;
+  background-color: var(--accent-red);
+  cursor: pointer;
+}
+
+.rounded-button:hover {
+  background-color: rgb(193, 0, 0);
+}
+
+.rounded-button:active {
+  box-shadow: 0px 0px var(--text-color);
+}
+
+/* Project themed colors */
+.theme-olympics {
+  background-color: var(--accent-pink);
+}
+
+.theme-daily-illini {
+  background-color: var(--accent-orange);
+}
+
+.theme-pocket-bringhurst {
+  background-color: var(--accent-blue);
+}
+
+.theme-corporate-relations {
+  background-color: var(--accent-red);
+}
+
+.theme-this-website {
+  background-color: var(--accent-purple);
+}
+
+.theme-class-creature {
+  background-color: var(--accent-green);
 }
