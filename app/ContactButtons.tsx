@@ -6,7 +6,7 @@ import TurbulenceFilter from "./components/TurbulenceFilter";
 
 export default function ContactButtons() {
   return (
-    <div className="flex flex-row gap-4 items-baseline" id="turbulence">
+    <div className="flex flex-row gap-4 items-center" id="turbulence">
       <ContactButton
         href="mailto:jneversmann@gmail.com"
         imageSrc="/images/site/contact_mail.svg"

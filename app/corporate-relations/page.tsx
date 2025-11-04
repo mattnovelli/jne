@@ -12,8 +12,8 @@ export default function CorporateRelations() {
     <ProjectLayout>
       <ProjectIntro
         title="Office of Corporate Relations"
-        skills={["book design", "photo editing", "graphic design"]}
-        timeline="August 2023 - December 2023"
+        skills={["Editorial", "Brand Identity"]}
+        tools={["Illustrator", "Photoshop", "InDesign", "Canva"]}
         theme="theme-corporate-relations"
       />
 
@@ -21,11 +21,6 @@ export default function CorporateRelations() {
         <ProjectParagraph
           title="brief"
           content="Working with the University of Illinois Office of Corporate Relations, I was tasked with designing professional promotional materials and publications to showcase the university's strategic partnerships with major corporations. The challenge was creating corporate-appropriate designs that would appeal to both university stakeholders and corporate partners while maintaining the university's brand identity and strengthening these important relationships."
-        />
-
-        <ProjectParagraph
-          title="result"
-          content="I developed a comprehensive suite of materials including partnership showcase publications, corporate directories, social media graphics, and presentation materials. Each design balanced professional sophistication with university branding, using clean layouts, strategic typography, and compelling visual storytelling to highlight key achievements and collaborative benefits. The final materials successfully strengthened relationships between the university and its corporate partners while establishing a cohesive visual language for all corporate relations communications."
         />
 
         <ProjectImage
@@ -36,6 +31,10 @@ export default function CorporateRelations() {
         <ProjectImage
           src="/images/work/corporaterelations/bayer.webp"
           alt="Bayer partnership materials"
+        />
+        <ProjectParagraph
+          title="result"
+          content="I developed a comprehensive suite of materials including partnership showcase publications, corporate directories, social media graphics, and presentation materials. Each design balanced professional sophistication with university branding, using clean layouts, strategic typography, and compelling visual storytelling to highlight key achievements and collaborative benefits. The final materials successfully strengthened relationships between the university and its corporate partners while establishing a cohesive visual language for all corporate relations communications."
         />
 
         <ProjectImage

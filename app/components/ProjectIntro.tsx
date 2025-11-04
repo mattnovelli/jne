@@ -6,7 +6,7 @@ interface ProjectIntroProps {
   description?: string;
   skills: string[];
   tools?: string[];
-  timeline: string;
+  timeline?: string;
   theme: string;
 }
 
@@ -21,28 +21,27 @@ export default function ProjectIntro({
   return (
     <div
       style={{ backgroundColor: "var(--background-color)" }}
-      className="grid grid-cols-3 grid-rows-1"
+      className="grid md:grid-cols-3 grid-cols-1 gap-5 grid-rows-1 md:mx-12!"
     >
       <div className="col-span-2">
-        <h1 className="leading-15 font-black">{title}</h1>
+        <h1 className="leading-17 font-black">{title}</h1>
         <p>{description}</p>
-        <p>{timeline}</p>
       </div>
-      <div className="grid grid-rows-2 grid-cols-1">
-        <div>
-          <h3>Skills</h3>
+      <div className="grid grid-rows-2 grid-cols-1 gap-6">
+        <div className="flex flex-col gap-2">
+          <h3 className="font-black! text-4xl!">Skills</h3>
 
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row flex-wrap gap-2">
             {skills.map((skill, index) => (
               <SkillPill key={index} skill={skill} />
             ))}
           </div>
         </div>
         {tools && (
-          <div>
-            <h3>Tools</h3>
+          <div className="flex flex-col gap-2">
+            <h3 className="font-black! text-4xl!">Tools</h3>
             <div>
-              <div className="flex flex-row gap-2 ">
+              <div className="flex flex-row  flex-wrap gap-2 ">
                 {tools.map((tool, index) => (
                   <SkillPill key={index} skill={tool} />
                 ))}

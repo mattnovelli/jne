@@ -23,6 +23,21 @@ export default function About() {
       <div className="">
         <h1 id="turbulence">about me</h1>
         <p>
+          Hi, I'm Julia! I'm a graphic designer based in Illinois, specializing
+          in solving design problems and creating effective, long-lasting
+          solutions. Accessibility and user-experience are the foundation of
+          everything I do. I enjoy all design mediums, but I have a special love
+          for organizing complex content into intentional, readable typography.
+        </p>
+        <p className="mt-8!">Aside from design, talk to me about:</p>
+        <ul className="list-disc! ml-6! mt-2! mb-8! text-2xl">
+          <li>Bugs</li>
+          <li>Enzo the dog</li>
+          <li>
+            My secret ability to track down fiestaware at the thrift store
+          </li>
+        </ul>
+        {/* <p>
           hi! i'm julia, a designer based in illinois. i have a passion for
           connecting and collaborating with people, and i genuinely fall in love
           with every project that comes my way. my goal is always to make my
@@ -38,8 +53,7 @@ export default function About() {
           time with my dog, enzo (yes, named after enzo ferrari). i also love
           listening to MF DOOM, trying to identify random bugs i encounter, and
           saying "windmill!" whenever i see a wind turbine.
-        </p>
-        <ContactButtons />
+        </p> */}
       </div>
     </div>
   );

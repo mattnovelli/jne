@@ -12,8 +12,8 @@ export default function Olympics() {
     <ProjectLayout>
       <ProjectIntro
         title="Los Angeles 2028 Olympics"
-        skills={["graphic design", "ui / ux", "brand identity"]}
-        timeline="January 2023 - May 2023"
+        skills={["Brand Identity", "Event Design", "UI/UX"]}
+        tools={["Illustrator", "Photoshop", "InDesign"]}
         theme="theme-olympics"
       />
 
@@ -22,15 +22,13 @@ export default function Olympics() {
           title="brief"
           content="I was commissioned to design a poster celebrating the upcoming Olympics in Paris. The brief asked for a poster that would capture the excitement and global spirit of the games while incorporating French cultural elements."
         />
-
-        <ProjectParagraph
-          title="result"
-          content="My design features bold, dynamic typography with Olympic rings integrated into the letterforms. The color palette draws from the French flag, while maintaining the vibrant energy associated with Olympic competition. The composition balances celebration with sophisticated European design sensibilities."
-        />
-
         <ProjectImage
           src="/images/work/olympics/emails_mockup.webp"
           alt="Olympics email newsletter mockups"
+        />
+        <ProjectParagraph
+          title="result"
+          content="My design features bold, dynamic typography with Olympic rings integrated into the letterforms. The color palette draws from the French flag, while maintaining the vibrant energy associated with Olympic competition. The composition balances celebration with sophisticated European design sensibilities."
         />
 
         <ProjectImage
@@ -53,10 +51,10 @@ export default function Olympics() {
           alt="Olympics wayfinding system"
         />
 
-        <ProjectImage
+        {/* <ProjectImage
           src="/images/work/olympics/ticket_mockup.webp"
           alt="Olympics ticket design"
-        />
+        /> */}
 
         <ProjectImage
           src="/images/work/olympics/brochure_mockup.webp"

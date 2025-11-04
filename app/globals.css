@@ -33,20 +33,20 @@
 
   /* Setting some defaults */
   background-color: var(--background-color);
-  font-family: "elza-narrow", sans-serif;
+  font-family: "area-normal", sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--background-color);
-  font-family: "elza-narrow", sans-serif;
+  font-family: "area-normal", sans-serif;
   color: var(--text-color);
   margin: 0;
   max-width: none;
 }
 
 h1 {
-  font-family: "elza-narrow", sans-serif;
+  font-family: "area-normal", sans-serif;
   font-size: 4rem;
   font-weight: bold;
   margin: 0;
@@ -54,7 +54,7 @@ h1 {
 
 h2,
 h3 {
-  font-family: "elza-narrow", sans-serif;
+  font-family: "area-normal", sans-serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 1.2;
@@ -63,7 +63,7 @@ h3 {
 }
 
 p {
-  font-family: "elza-narrow", sans-serif;
+  font-family: "area-normal", sans-serif;
   font-size: 2rem;
   line-height: 1.4;
 }
@@ -79,7 +79,7 @@ p {
   border-radius: 10px;
   padding: 1em;
   box-shadow: 10px 10px var(--text-color);
-  font-family: "elza-narrow", sans-serif;
+  font-family: "area-normal", sans-serif;
   font-size: 120%;
   outline: 0;
   border: none;
@@ -98,37 +98,25 @@ p {
 
 /* Project themed colors */
 .theme-olympics {
-  background-color: var(--accent-pink);
+  background-color: #ef9f2a;
 }
 
 .theme-daily-illini {
-  background-color: var(--accent-orange);
-}
-
-.theme-pocket-bringhurst {
-  background-color: var(--accent-blue);
+  background-color: #c75d00;
 }
 
 .theme-corporate-relations {
-  background-color: var(--accent-red);
-}
-
-.theme-this-website {
-  background-color: var(--accent-purple);
-}
-
-.theme-class-creature {
-  background-color: var(--accent-green);
+  background-color: #3c8a41;
 }
 
 .theme-hi-ai {
-  background-color: #54007e;
+  background-color: #7e47ae;
 }
 
 .theme-ltc-rebrand {
-  background-color: #27aae1;
+  background-color: #3572c2;
 }
 
 .theme-bugs-nextdoor {
-  background-color: #9c0d00;
+  background-color: #e79f2a;
 }

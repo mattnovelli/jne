@@ -59,7 +59,7 @@ export default function Header() {
 
           <nav
             id="turbulence"
-            className="flex gap-8 flex-wrap  font-bold text-4xl"
+            className="flex gap-8 flex-wrap items-center font-bold text-4xl"
           >
             <Link href="/" className="text-black no-underline">
               home

@@ -11,7 +11,7 @@ export default function Home() {
       imageSrc: "/images/home/olympics_cutout.webp",
       imageAlt: "LA 2028 Olympics project mockup",
       title: "LA 2028 Olympics",
-      skills: ["graphic design", "ui / ux", "brand identity"],
+      skills: ["Brand Identity", "Event Design", "UI/UX"],
       theme: "theme-olympics",
     },
     {
@@ -19,12 +19,7 @@ export default function Home() {
       imageSrc: "/images/home/di_cutout.webp",
       imageAlt: "The Daily Illini project mockup",
       title: "The Daily Illini",
-      skills: [
-        // "art direction",
-        "graphic design",
-        "brand identity",
-        "page layout",
-      ],
+      skills: ["Art Direction", "Editorial", "Print"],
       theme: "theme-daily-illini",
     },
     {
@@ -32,12 +27,7 @@ export default function Home() {
       imageSrc: "/images/work/hi-ai/Frame 12.png",
       imageAlt: "Hi, AI project mockup",
       title: "Hi, AI",
-      skills: [
-        // "art direction",
-        // "graphic design",
-        // "brand identity",
-        // "page layout",
-      ],
+      skills: ["Brand Identity", "Art Direction", "Event Design"],
       theme: "theme-hi-ai",
     },
     {
@@ -45,7 +35,7 @@ export default function Home() {
       imageSrc: "/images/home/ocr_cutout.webp",
       imageAlt: "Office of Corporate Relations project mockup",
       title: "Office of Corporate Relations",
-      skills: ["book design", "photo editing", "graphic design"],
+      skills: ["Editorial", "Brand Identity"],
       theme: "theme-corporate-relations",
     },
     {
@@ -53,12 +43,7 @@ export default function Home() {
       imageSrc: "/images/work/bugsnextdoor/final bugs/butterfly.png",
       imageAlt: "Bugs Next Door project mockup",
       title: "Bugs Next Door",
-      skills: [
-        // "art direction",
-        // "graphic design",
-        // "brand identity",
-        // "page layout",
-      ],
+      skills: ["UI/UX", "Brand Identity", "Illustration"],
       theme: "theme-bugs-nextdoor",
     },
     {
@@ -66,12 +51,7 @@ export default function Home() {
       imageSrc: "/images/work/ltc-rebrand/Logomark-Dark-Blue.svg",
       imageAlt: "LTC Rebrand project mockup",
       title: "LTC Rebrand",
-      skills: [
-        // "art direction",
-        // "graphic design",
-        // "brand identity",
-        // "page layout",
-      ],
+      skills: ["Brand Identity", "Art Direction"],
       theme: "theme-ltc-rebrand",
     },
     // {
@@ -105,7 +85,7 @@ export default function Home() {
   return (
     <div className=" flex px-12 flex-col">
       <div id="turbulence" className="text-center ">
-        <h1 className="mt-0 mb-0 font-black! md:text-8xl! text-base">
+        <h1 className="mt-0 mb-0 font-black! md:text-7xl! text-base">
           julia eversmann
         </h1>
         <h2 className="mt-[0.5vw] md:mt-[4vw] mb-0">graphic designer</h2>
@@ -113,7 +93,7 @@ export default function Home() {
 
       <div
         id="my-work"
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12  max-w-7xl mx-auto! mt-10!"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12  max-w-7xl mx-auto! mt-16!"
       >
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
