@@ -30,9 +30,9 @@ export function ProjectContent({ children }: ProjectContentProps) {
 
 export function ProjectParagraph({ title, content }: ProjectParagraphProps) {
   return (
-    <div className="px-0! py-15!">
-      <h3 className="font-black! leading-relaxed!">{title}</h3>
-      <p className="text-2xl!">{content}</p>
+    <div className="px-8! py-15!">
+      <h3 className="font-extrabold! leading-relaxed!">{title}</h3>
+      <p className="text-xl! leading-relaxed! ">{content}</p>
     </div>
   );
 }

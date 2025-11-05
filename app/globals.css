@@ -37,6 +37,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: var(--background-color);
   font-family: "area-normal", sans-serif;
@@ -48,7 +52,7 @@ body {
 h1 {
   font-family: "area-normal", sans-serif;
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: 800;
   margin: 0;
 }
 

@@ -6,7 +6,7 @@ import ContactButtons from "../ContactButtons";
 
 export default function About() {
   return (
-    <div className="grid md:grid-cols-2 md:gap-12 gap-4 min-h-screen px-12 py-24 md:max-w-7xl mx-auto! ">
+    <div className="grid md:grid-cols-2 md:gap-12 gap-4  px-12 py-24 md:max-w-7xl mx-auto! ">
       <div className="flex flex-col gap-8">
         <img
           src="/images/about/headshot.png"
@@ -22,7 +22,7 @@ export default function About() {
 
       <div className="">
         <h1 id="turbulence ">about me</h1>
-        <p className="mt-8!">
+        <p className="mt-8! text-2xl!">
           Hi, I'm Julia! I'm a graphic designer based in Illinois, specializing
           in solving design problems and creating effective, long-lasting
           solutions. Accessibility and user-experience are the foundation of
