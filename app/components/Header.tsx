@@ -41,7 +41,7 @@ export default function Header() {
                 opacity: showTongue ? 0 : 1,
                 pointerEvents: showTongue ? "none" : "auto",
               }}
-              onClick={handleLizardClick}
+              onMouseDown={handleLizardClick}
             />
             <Image
               src="/images/site/lizard_2.svg"
@@ -53,7 +53,7 @@ export default function Header() {
                 opacity: showTongue ? 1 : 0,
                 pointerEvents: showTongue ? "none" : "auto",
               }}
-              onClick={handleLizardClick}
+              onMouseDown={handleLizardClick}
             />
           </div>
 
