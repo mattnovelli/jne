@@ -25,7 +25,7 @@ export default function ProjectIntro({
     >
       <div className="col-span-2">
         <h1 className="leading-tight! font-black!">{title}</h1>
-        <p>{description}</p>
+        <p className="max-w-3/4">{description}</p>
       </div>
       <div className="grid grid-rows-2 grid-cols-1 gap-6 justify-end!">
         <div className="flex flex-col gap-2 ">

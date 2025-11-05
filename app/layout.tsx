@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "julia eversmann",
   description:
-    "julia eversmann is a graphic designer based in the midwestern united states.",
+    "julia eversmann is a graphic designer based in champaign-urbana.",
   icons: {
     icon: "/favicon.svg",
   },

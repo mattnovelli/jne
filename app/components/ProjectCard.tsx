@@ -22,7 +22,7 @@ export default function ProjectCard({
   return (
     <Link href={href} className="no-underline ">
       <div
-        className={`${theme} text-white p-6! rounded-3xl aspect-square flex flex-col overflow-hidden hover:scale-105 transition-transform duration-200 cursor-pointer shadow-lg`}
+        className={`${theme} text-white p-6!  rounded-3xl aspect-square flex flex-col overflow-hidden hover:scale-105 transition-transform duration-200 cursor-pointer shadow-lg`}
       >
         {/* Prominent image taking most of the card */}
         <div className="flex-1 flex items-center justify-center mb-4 p-4">
@@ -51,7 +51,7 @@ export default function ProjectCard({
 
 export function SkillPill({ skill }: { skill: string }) {
   return (
-    <span className=" bg-[#00000052] text-white px-2! py-1! rounded text-xs  whitespace-nowrap">
+    <span className=" bg-[#000000c0] text-white px-2! py-1! rounded text-xs  whitespace-nowrap">
       {skill}
     </span>
   );
