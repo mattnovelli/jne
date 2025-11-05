@@ -24,7 +24,7 @@ export default function Olympics() {
         />
         <ProjectParagraph
           title="brief"
-          content="I was commissioned to design a poster celebrating the upcoming Olympics in Paris. The brief asked for a poster that would capture the excitement and global spirit of the games while incorporating French cultural elements."
+          content="In 2028, the Olympics will be held in Los Angeles. This is my take on a visual identity system for the event. The Olympics present a unique challenge: you are not only designing for the host city, you are designing for the entire world. The identity needed to capture the city’s unique character while appealing to a global audience of visitors. My goal was to create a bold, bright, and welcoming visual system that reflects both the energy of Los Angeles and the spirit of the Olympic Games."
         />
 
         <ProjectImage
@@ -38,7 +38,7 @@ export default function Olympics() {
         />
         <ProjectParagraph
           title="result"
-          content="My design features bold, dynamic typography with Olympic rings integrated into the letterforms. The color palette draws from the French flag, while maintaining the vibrant energy associated with Olympic competition. The composition balances celebration with sophisticated European design sensibilities."
+          content="The final logo is inspired by the geographical shape of LA, incorporates abstractions of the letters 'L' and 'A,' and forms the image of a person waving, welcoming international visitors to the olympics and conveying motion and energy. The color palette is bright and playful, keeping the visual system inviting and summery while also paying homage to the color palette of the LA Olympics in 1984. I developed photo treatments that combine bold sports photography with iconic Los Angeles imagery, such as palm trees and cityscapes. I applied the visual system to user-focused products like wayfinding, maps, schedules, tickets, and email newsletters.This ensured the Olympic experience would be intuitive for international visitors. The resulting identity is vibrant, energetic, and inclusive, capturing the dynamic spirit of Los Angeles while making the city accessible and welcoming to the world."
         />
         <ProjectImage
           src="/images/work/olympics/poster_mockup.webp"

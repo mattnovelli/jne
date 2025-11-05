@@ -29,19 +29,20 @@ export default function BugsNextDoor() {
         />
         <ProjectParagraph
           title="result"
-          content="I designed an educational app with a simple, intuitive interface suitable for users of all ages. Lessons are concise and interactive, guiding users as they learn about each bug's role in our ecosystem. All featured bugs were sculpted from clay to make them feel more approachable and less intimidating, and playful language and copywriting create a friendly, welcoming experience. The result is an educational tool that inspires curiosity, encourages exploration, and helps users rethink their relationship with bugs."
+          content="I designed an educational app with a simple, intuitive interface suitable for users of all ages. Lessons are concise and interactive, guiding users as they learn about each bug’s role in our ecosystem. All featured bugs were sculpted from clay to make them feel more approachable and less intimidating, and playful language and copywriting create a friendly, welcoming experience. The result is an educational tool that inspires curiosity, encourages exploration, and helps users rethink their relationship with bugs."
         />
 
-        <video 
-          controls 
+        <video
+          controls
           className="w-full max-w-4xl rounded-4xl"
           poster="/images/work/bugsnextdoor/bnd_thumbnail.webp"
         >
-          <source src="/images/work/bugsnextdoor/bnd_prototype.mp4" type="video/mp4" />
+          <source
+            src="/images/work/bugsnextdoor/bnd_prototype.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
-
-
 
         <ProjectGrid>
           <ProjectImage

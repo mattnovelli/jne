@@ -30,7 +30,7 @@ export default function IETCAnniversary() {
 
         <ProjectParagraph
           title="result"
-          content="I developed the full visual identity system, including patterns, graphics, and assets, and applied it to a wide range of deliverables: an attendee quick-start booklet, conference app graphics, tall wayfinding towers, interactive maps, signage for rooms and activities, digital displays, and attendee giveaways. I worked directly with vendors to produce print materials, carefully managing specifications, materials, and production processes to ensure quality and consistency. Each element balances bold 90s aesthetics with modern clarity and usability, resulting in a visually engaging, intuitive, and memorable conference experience that celebrates IETC's 30th anniversary while highlighting modern edtech innovation."
+          content="I developed the full visual identity system, including patterns, graphics, and assets, and applied it to a wide range of deliverables: an attendee quick-start booklet, conference app graphics, tall wayfinding towers, interactive maps, signage for rooms and activities, digital displays, and attendee giveaways. I worked directly with vendors to produce print materials, carefully managing specifications, materials, and production processes to ensure quality and consistency. Each element balances bold 90s aesthetics with modern clarity and usability, resulting in a visually engaging, intuitive, and memorable conference experience that celebrates IETC’s 30th anniversary while highlighting modern edtech innovation."
         />
       </ProjectContent>
     </ProjectLayout>
