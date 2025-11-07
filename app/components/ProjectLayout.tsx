@@ -16,7 +16,7 @@ export default function ProjectLayout({ children }: ProjectLayoutProps) {
       <div className="flex justify-center mt-8">
         <Link
           href="/"
-          className="bg-gray-800 text-white! px-7! py-4! mt-20! text-xl rounded-4xl font-bold shadow-lg hover:bg-gray-700 transition-colors"
+          className="bg-gray-800 text-white! px-7! py-4! mt-20! text-xl rounded-3xl font-bold shadow-lg hover:bg-gray-700 transition-colors"
         >
           Back to Home
         </Link>

@@ -15,6 +15,7 @@ export default function LTCRebrand() {
         skills={["Brand Identity", "Art Direction"]}
         tools={["Illustrator", "InDesign", "Figma", "Canva"]}
         theme="ltc-rebrand"
+        description="starting from scratch for a statewide leader in edtech"
       />
 
       <ProjectContent>
@@ -29,7 +30,7 @@ export default function LTCRebrand() {
 
         <iframe
           src="/images/work/ltc-rebrand/Internal Brand Guide.pdf"
-          className="aspect-video w-full rounded-2xl"
+          className="aspect-video w-full rounded-2xl hidden! md:block!"
         ></iframe>
 
         <ProjectParagraph
@@ -37,7 +38,7 @@ export default function LTCRebrand() {
           content="The new visual identity references the original logo while bringing the brand up to speed with modern design language. The primary blue tones reinforce the organization’s connection to technology and trustworthiness, while a clean, geometric sans serif conveys professionalism and legibility. The logo’s organic, abstract form symbolizes adaptability, mirroring how the LTC evolves alongside constantly changing technology. The design is versatile, depending on the audience: it can be playful and inviting for teachers, or refined and professional for administrators. The result is a unified, modern, and user-friendly brand designed to last well into the future, positioning the LTC as a leader in K–12 technology."
         />
 
-        <div className="grid grid-cols-5 gap-10">
+        <div className="grid grid-cols-5 md:gap-10 gap-4">
           <ProjectImage
             src="/images/work/ltc-rebrand/flyer.png"
             alt="Original LTC logo before rebrand"
@@ -53,14 +54,14 @@ export default function LTCRebrand() {
           <div className="col-span-5">
             <iframe
               src="https://www.youtube-nocookie.com/embed/0XgDT092JwA?vq=hd1080&modestbranding=1&rel=0"
-              className="rounded-4xl aspect-video w-full"
+              className="rounded-3xl aspect-video w-full"
               title="Getting Started | 5 Steps to Edtech Professonal Learning for your School"
             ></iframe>
           </div>
           <ProjectImage
             src="/images/work/ltc-rebrand/rack card mockup.png"
             alt="LTC rack card mockup design"
-            className="col-span-2  object-fit! h-full! w-full!"
+            className="col-span-2  object-cover! h-full! w-full!"
           />
           <ProjectImage
             src="/images/work/ltc-rebrand/postcard.png"

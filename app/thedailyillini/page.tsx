@@ -13,6 +13,7 @@ export default function TheDailyIllini() {
     <ProjectLayout>
       <ProjectIntro
         title="The Daily Illini"
+        description="Art direction at the University of Illinois' student newspaper"
         skills={["Art Direction", "Editorial", "Print"]}
         tools={["InDesign", "InCopy", "InCopy", "Photoshop"]}
         theme="theme-daily-illini"

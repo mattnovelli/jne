@@ -44,7 +44,7 @@ export function ProjectImage({ src, alt, className = "" }: ProjectImageProps) {
       alt={alt}
       width={1200}
       height={800}
-      className={` md:w-full md:h-full md:object-contain  rounded-4xl ${className}`}
+      className={` md:w-full md:h-full md:object-contain  rounded-3xl ${className}`}
     />
   );
 }

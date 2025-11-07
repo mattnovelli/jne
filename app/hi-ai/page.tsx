@@ -12,7 +12,7 @@ export default function HiAI() {
     <ProjectLayout>
       <ProjectIntro
         title="Hi, AI"
-        description="Creating a visual identity for a K-12 AI Conference."
+        description="Creating a friendly, approachable visual identity for a K-12 AI Conference."
         skills={["Brand Identity", "Art Direction", "Event Design"]}
         tools={["Illustrator", "Figma", "Canva"]}
         timeline="2024"
@@ -37,7 +37,7 @@ export default function HiAI() {
           title="Result"
           content="The final identity brings a sense of friendliness and approachability to AI. The logo’s speech bubble motif bridges both sides of the conference’s theme: the conversational interfaces of AI chatbots, and the human conversations taking place during the event. A playful, handwritten font emphasizes personal connection in the age of AI, while the vibrant purple palette incorporates common AI aesthetics, building on visual cues already recognizable to educators. The result is a brand that feels both innovative and welcoming,  inviting educators to confidently say “hi” to AI."
         />
-        <div className="grid grid-cols-5 gap-10 ">
+        <div className="grid grid-cols-5 md:gap-10 gap-4 ">
           <ProjectImage
             src="/images/work/hi-ai/sticker.png"
             alt="Hi, AI conference branded sticker design"

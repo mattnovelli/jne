@@ -4,6 +4,8 @@ import React, { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ContactButtons from "../ContactButtons";
+import { FaHome } from "react-icons/fa";
+import { FaPersonCircleQuestion } from "react-icons/fa6";
 
 export default function Header() {
   const [showTongue, setShowTongue] = useState(false);
@@ -28,27 +30,23 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex flex-col  py-8!  md:mx-12! ">
+      <header className="flex flex-col pt-6! pb-10! md:py-8!  md:mx-12! mx-5! ">
         <div className="flex justify-between  items-center">
           <div id="turbulence" className="relative">
-            <Image
+            <img
               src="/images/site/lizard_1.svg"
               alt="Lizard mascot"
-              width={100}
-              height={100}
-              className=" md:h-[8vw] cursor-pointer"
+              className="select-none md:h-[8vw] cursor-pointer size-[80px]! md:size-[100px]!"
               style={{
                 opacity: showTongue ? 0 : 1,
                 pointerEvents: showTongue ? "none" : "auto",
               }}
               onMouseDown={handleLizardClick}
             />
-            <Image
+            <img
               src="/images/site/lizard_2.svg"
               alt="Lizard with tongue"
-              width={100}
-              height={100}
-              className=" absolute top-0 left-0 cursor-pointer"
+              className="select-none absolute top-0 left-0 cursor-pointer size-[80px]! md:size-[100px]!"
               style={{
                 opacity: showTongue ? 1 : 0,
                 pointerEvents: showTongue ? "none" : "auto",
@@ -59,13 +57,22 @@ export default function Header() {
 
           <nav
             id="turbulence"
-            className="flex gap-8 flex-wrap items-center font-bold text-4xl"
+            className="flex gap-8 flex-wrap items-center font-bold text-3xl"
           >
-            <Link href="/" className="text-black no-underline">
+            <Link href="/" className="text-black no-underline md:block hidden">
               home
             </Link>
-            <Link href="/about" className="text-black no-underline">
+            <Link
+              href="/about"
+              className="text-black no-underline md:block hidden"
+            >
               about
+            </Link>
+            <Link href="/" className="text-black no-underline md:hidden">
+              <FaHome />
+            </Link>
+            <Link href="/about" className="text-black no-underline md:hidden">
+              <FaPersonCircleQuestion />
             </Link>
             <div className="hidden sm:block">
               <ContactButtons />

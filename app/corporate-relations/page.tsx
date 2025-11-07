@@ -15,6 +15,7 @@ export default function CorporateRelations() {
         skills={["Editorial", "Brand Identity"]}
         tools={["Illustrator", "Photoshop", "InDesign", "Canva"]}
         theme="theme-corporate-relations"
+        description="Supporting corporate relationships at the University of Illinois"
       />
 
       <ProjectContent>
@@ -43,7 +44,7 @@ export default function CorporateRelations() {
           src="/images/work/corporaterelations/compeer.webp"
           alt="Compeer partnership materials"
         />
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-2 md:gap-10 gap-4">
           <ProjectImage
             src="/images/work/corporaterelations/socials.webp"
             alt="Social media graphics"

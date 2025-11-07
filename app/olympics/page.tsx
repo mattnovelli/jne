@@ -15,6 +15,7 @@ export default function Olympics() {
         skills={["Brand Identity", "Event Design", "UI/UX"]}
         tools={["Illustrator", "Photoshop", "InDesign"]}
         theme="theme-olympics"
+        description="Imagining a brand identity for the world's largest sporting event"
       />
 
       <ProjectContent>
@@ -35,7 +36,7 @@ export default function Olympics() {
           title="Result"
           content="The final logo is inspired by the geographical shape of LA, incorporates abstractions of the letters 'L' and 'A,' and forms the image of a person waving, welcoming international visitors to the olympics and conveying motion and energy. The color palette is bright and playful, keeping the visual system inviting and summery while also paying homage to the color palette of the LA Olympics in 1984. I developed photo treatments that combine bold sports photography with iconic Los Angeles imagery, such as palm trees and cityscapes. I applied the visual system to user-focused products like wayfinding, maps, schedules, tickets, and email newsletters.This ensured the Olympic experience would be intuitive for international visitors. The resulting identity is vibrant, energetic, and inclusive, capturing the dynamic spirit of Los Angeles while making the city accessible and welcoming to the world."
         />
-        <div className="grid grid-cols-5 gap-10">
+        <div className="grid grid-cols-5 md:gap-10 gap-4">
           <ProjectImage
             src="/images/work/olympics/wayfinding_mockup.webp"
             alt="Olympics style guide"

@@ -16,6 +16,7 @@ export default function BugsNextDoor() {
         skills={["UI/UX", "Brand Identity", "Illustration"]}
         tools={["Illustrator", "Photoshop", "Figma"]}
         theme="bugs-next-door"
+        description="A mobile app to help you appreciate the amazing world of bugs"
       />
 
       <ProjectContent>
@@ -29,7 +30,7 @@ export default function BugsNextDoor() {
         />
         <video
           controls
-          className="w-full max-w-4xl rounded-4xl"
+          className="w-full max-w-4xl rounded-3xl"
           poster="/images/work/bugsnextdoor/bnd_thumbnail.webp"
           autoPlay={true}
           loop={true}
@@ -45,7 +46,7 @@ export default function BugsNextDoor() {
           title="Result"
           content="I designed an educational app with a simple, intuitive interface suitable for users of all ages. Lessons are concise and interactive, guiding users as they learn about each bug’s role in our ecosystem. All featured bugs were sculpted from clay to make them feel more approachable and less intimidating, and playful language and copywriting create a friendly, welcoming experience. The result is an educational tool that inspires curiosity, encourages exploration, and helps users rethink their relationship with bugs."
         />
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-3 md:gap-10 gap-4">
           <ProjectImage
             src="/images/work/bugsnextdoor/final bugs/bee.png"
             alt="Clay bee sculpture"
@@ -63,7 +64,7 @@ export default function BugsNextDoor() {
             className="object-fit! h-full! w-full!"
           />
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-10">
+        <div className="grid grid-cols-2 grid-rows-2 md:gap-10 gap-4">
           <ProjectImage
             src="/images/work/bugsnextdoor/final exhibition posters-01.png"
             alt="Bugs Next Door exhibition poster"

@@ -3,14 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/Header";
 import TurbulenceFilter from "./components/TurbulenceFilter";
+import { BsFillEnvelopeFill } from "react-icons/bs";
 
 export default function ContactButtons() {
   return (
     <div className="flex flex-row gap-4 items-center" id="turbulence">
       <ContactButton
         href="mailto:jneversmann@gmail.com"
-        imageSrc="/images/site/contact_mail.svg"
         imageAlt="Email contact"
+        reactIcon={<BsFillEnvelopeFill />}
       />
 
       <ContactButton
@@ -25,21 +26,30 @@ export default function ContactButtons() {
 interface ContactButtonProps {
   href: string;
   imageSrc: string;
-  imageAlt: string;
+  imageAlt?: string;
+  reactIcon?: React.ReactNode;
 }
 
-function ContactButton({ href, imageSrc, imageAlt }: ContactButtonProps) {
+function ContactButton({
+  href,
+  imageSrc,
+  imageAlt,
+  reactIcon,
+}: ContactButtonProps) {
   return (
     <Link
       href={href}
       target="_blank"
       className="flex items-center justify-center hover:brightness-80 transition-all duration-200"
     >
-      <img
-        src={imageSrc}
-        alt={imageAlt}
-        className="w-8 h-8 object-contain rounded-lg"
-      />
+      {imageSrc && (
+        <img
+          src={imageSrc}
+          alt={imageAlt}
+          className="w-8 h-8 object-contain rounded-lg"
+        />
+      )}
+      {reactIcon && <span className="ml-2 text-2xl">{reactIcon}</span>}
     </Link>
   );
 }
