@@ -12,6 +12,7 @@ export default function ContactButtons() {
         href="mailto:jneversmann@gmail.com"
         imageAlt="Email contact"
         reactIcon={<BsFillEnvelopeFill />}
+        className="bg-pink-500 p-1! rounded-md [&>span]:text-white! "
       />
 
       <ContactButton
@@ -28,6 +29,7 @@ interface ContactButtonProps {
   imageSrc?: string;
   imageAlt: string;
   reactIcon?: React.ReactNode;
+  className?: string;
 }
 
 function ContactButton({
@@ -35,12 +37,13 @@ function ContactButton({
   imageSrc,
   imageAlt,
   reactIcon,
+  className = "",
 }: ContactButtonProps) {
   return (
     <Link
       href={href}
       target="_blank"
-      className="flex items-center justify-center hover:brightness-80 transition-all duration-200"
+      className={`flex items-center justify-center hover:brightness-80 transition-all duration-200 ${className}`}
     >
       {imageSrc && (
         <img

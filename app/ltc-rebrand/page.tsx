@@ -61,7 +61,7 @@ export default function LTCRebrand() {
           <ProjectImage
             src="/images/work/ltc-rebrand/rack card mockup.png"
             alt="LTC rack card mockup design"
-            className="col-span-2  object-cover! h-full! w-full!"
+            className="col-span-2  object-contain! h-full! w-full!"
           />
           <ProjectImage
             src="/images/work/ltc-rebrand/postcard.png"
