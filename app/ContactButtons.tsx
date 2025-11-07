@@ -25,8 +25,8 @@ export default function ContactButtons() {
 
 interface ContactButtonProps {
   href: string;
-  imageSrc: string;
-  imageAlt?: string;
+  imageSrc?: string;
+  imageAlt: string;
   reactIcon?: React.ReactNode;
 }
 
