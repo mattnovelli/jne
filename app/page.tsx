@@ -9,50 +9,64 @@ export default function Home() {
     {
       href: "/ltc-rebrand",
       imageSrc: "/images/work/ltc-rebrand/Logomark-Dark-Blue.svg",
-      imageAlt: "LTC Rebrand project mockup",
+      imageAlt: "",
       title: "LTC Rebrand",
       skills: ["Brand Identity", "Art Direction"],
       theme: "theme-ltc-rebrand",
     },
     {
-      href: "/corporate-relations",
-      imageSrc: "/images/home/ocr_cutout.webp",
-      imageAlt: "Office of Corporate Relations project mockup",
-      title: "Office of Corporate Relations",
-      skills: ["Editorial", "Brand Identity"],
-      theme: "theme-corporate-relations",
+      href: "/ietc-anniversary",
+      imageSrc: "/images/home/IETC square.png",
+      imageAlt: "",
+      title: "IETC Anniversary",
+      skills: [
+        // "art direction",
+        // "graphic design",
+        // "brand identity",
+        // "page layout",
+      ],
+      theme: "theme-ietc-anniversary",
     },
     {
       href: "/hi-ai",
       imageSrc: "/images/work/hi-ai/Frame 12.png",
-      imageAlt: "Hi, AI project mockup",
+      imageAlt: "",
       title: "Hi, AI",
       skills: ["Brand Identity", "Art Direction", "Event Design"],
       theme: "theme-hi-ai",
     },
     {
-      href: "/bugs-next-door",
-      imageSrc: "/images/work/bugsnextdoor/final bugs/butterfly.png",
-      imageAlt: "Bugs Next Door project mockup",
-      title: "Bugs Next Door",
-      skills: ["UI/UX", "Brand Identity", "Illustration"],
-      theme: "theme-bugs-nextdoor",
+      href: "/corporate-relations",
+      imageSrc: "/images/home/ocr_cutout.webp",
+      imageAlt: "",
+      title: "Office of Corporate Relations",
+      skills: ["Editorial", "Brand Identity"],
+      theme: "theme-corporate-relations",
+    },
+
+    {
+      href: "/thedailyillini",
+      imageSrc: "/images/home/di_cutout.webp",
+      imageAlt: "",
+      title: "The Daily Illini",
+      skills: ["Art Direction", "Editorial", "Print"],
+      theme: "theme-daily-illini",
     },
     {
       href: "/olympics",
       imageSrc: "/images/home/olympics_cutout.webp",
-      imageAlt: "LA 2028 Olympics project mockup",
+      imageAlt: "",
       title: "LA 2028 Olympics",
       skills: ["Brand Identity", "Event Design", "UI/UX"],
       theme: "theme-olympics",
     },
     {
-      href: "/thedailyillini",
-      imageSrc: "/images/home/di_cutout.webp",
-      imageAlt: "The Daily Illini project mockup",
-      title: "The Daily Illini",
-      skills: ["Art Direction", "Editorial", "Print"],
-      theme: "theme-daily-illini",
+      href: "/bugs-next-door",
+      imageSrc: "/images/work/bugsnextdoor/final bugs/butterfly.png",
+      imageAlt: "",
+      title: "Bugs Next Door",
+      skills: ["UI/UX", "Brand Identity", "Illustration"],
+      theme: "theme-bugs-nextdoor",
     },
 
     // {
@@ -67,19 +81,6 @@ export default function Home() {
     //     // "page layout",
     //   ],
     //   theme: "parent-toolkit",
-    // },
-    // {
-    //   href: "/ietc-anniversary",
-    //   imageSrc: "/images/home/di_cutout.webp",
-    //   imageAlt: "IETC Anniversary project mockup",
-    //   title: "IETC Anniversary",
-    //   skills: [
-    //     // "art direction",
-    //     // "graphic design",
-    //     // "brand identity",
-    //     // "page layout",
-    //   ],
-    //   theme: "ietc-anniversary",
     // },
   ];
 
@@ -97,8 +98,11 @@ export default function Home() {
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8  max-w-5xl m-auto! "
       >
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard key={index} {...project} priority />
         ))}
+        <div className=" bg-amber-500 md:col-span-2 col-span-1 row-span-1 text-white p-6!  rounded-3xl  flex flex-col overflow-hidden duration-200  shadow-lg">
+          <p className="font-black mt-auto! text-black">More to Come!</p>
+        </div>
       </div>
     </div>
   );

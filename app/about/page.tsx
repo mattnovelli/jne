@@ -1,28 +1,56 @@
 import React from "react";
 import Image from "next/image";
-import Header from "../components/Header";
-import TurbulenceFilter from "../components/TurbulenceFilter";
-import ContactButtons from "../ContactButtons";
+
+const thingsYouCanTalkToJuliaAbout = [
+  {
+    title: "Enzo the Dog",
+    imgSrc: "/images/about/enzo donut.png",
+    alt: "A photo of enzo, a rat terrier, wearing a giant stuffed pink frosted donut around his head.",
+  },
+  {
+    title: "My ability to spot Fiestaware at the thrift store",
+    imgSrc: "/images/about/fiestaware.png",
+    alt: "A cutout photo of a fiestaware plate and mug",
+  },
+  {
+    title: "Original Wii Games",
+    imgSrc: "/images/about/wii fish.png",
+    alt: "A photo of a colorful paper mâché fish.",
+  },
+];
+
+function shuffleThings<T>(items: T[]): T[] {
+  const shuffled = [...items];
+
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  return shuffled;
+}
+
+function getRandomRotation(maxDegrees: number): number {
+  return (Math.random() * 2 - 1) * maxDegrees;
+}
 
 export default function About() {
-  return (
-    <div className="grid md:grid-cols-2 md:gap-12 gap-4  px-12 py-24 md:max-w-7xl mx-auto! ">
-      <div className="flex flex-col gap-8">
-        <img
-          src="/images/about/headshot.png"
-          alt="Photo of Julia Eversmann"
-          className="rounded-3xl"
-        />
-        {/* <img
-          src="/images/about/donut_cutout.webp"
-          alt="Enzo the rat terrier wearing a donut costume"
-          className="rounded-3xl w-sm md:block! hidden!"
-        /> */}
-      </div>
+  const shuffledThings = shuffleThings(thingsYouCanTalkToJuliaAbout);
 
-      <div className="">
+  return (
+    <div className="grid md:grid-cols-3 grid-cols-1 md:gap-12 gap-6 h-min  p-12! md:max-w-7xl mx-auto! ">
+      <Image
+        src="/images/about/julia.png"
+        alt="Photo of Julia Eversmann"
+        className="rounded-3xl col-span-1"
+        width={500}
+        height={500}
+        priority
+      />
+
+      <div className="md:col-span-2 col-span-1">
         <h1 id="turbulence ">about me</h1>
-        <p className="mt-8! text-2xl!">
+        <p className="mt-8! text-2xl! ">
           Hi, I'm Julia! I'm a graphic designer based in Illinois, specializing
           in solving design problems and creating effective, long-lasting
           solutions. Accessibility and user-experience are the foundation of
@@ -55,6 +83,39 @@ export default function About() {
           saying "windmill!" whenever i see a wind turbine.
         </p> */}
       </div>
+      {/* <div className="col-span-3 text-center mx-auto w-full mt-22! "> */}
+      <hr className="md:col-span-3 col-span-1" />
+      <h2 className="md:text-center text-left font-black! lowercase md:col-span-3! col-span-1 md:text-2xl! ">
+        Don’t want to talk about design? Talk to me about:
+      </h2>
+
+      {shuffledThings.map((thing) => {
+        const rotation = getRandomRotation(15);
+
+        return (
+          <div
+            key={thing.title}
+            className="grid grid-cols-1 grid-rows-[14rem_min-content] md:grid-rows-[18rem_min-content] lowercase col-span-1"
+          >
+            <div
+              className="h-full w-full flex items-center justify-center"
+              style={{ transform: `rotate(${rotation.toFixed(2)}deg)` }}
+            >
+              <Image
+                alt={thing.alt}
+                src={thing.imgSrc}
+                width={400}
+                height={400}
+                className="max-h-full w-auto max-w-full object-contain"
+              />
+            </div>
+            <p className="text-gray-500 text-xl! font-bold h-min self-start px-8! text-center">
+              {thing.title}
+            </p>
+          </div>
+        );
+      })}
     </div>
+    // </div>
   );
 }

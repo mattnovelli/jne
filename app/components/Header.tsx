@@ -68,10 +68,18 @@ export default function Header() {
             >
               about
             </Link>
-            <Link href="/" className="text-black no-underline md:hidden">
+            <Link
+              aria-label="Home"
+              href="/"
+              className="text-black no-underline md:hidden"
+            >
               <FaHome />
             </Link>
-            <Link href="/about" className="text-black no-underline md:hidden">
+            <Link
+              aria-label="About"
+              href="/about"
+              className="text-black no-underline md:hidden"
+            >
               <FaPersonCircleQuestion />
             </Link>
             <div className="hidden sm:block">

@@ -9,6 +9,7 @@ interface ProjectCardProps {
   title: string;
   skills: string[];
   theme: string;
+  priority?: boolean;
 }
 
 export default function ProjectCard({
@@ -18,6 +19,7 @@ export default function ProjectCard({
   title,
   skills,
   theme,
+  priority = false,
 }: ProjectCardProps) {
   return (
     <Link href={href} className="no-underline ">
@@ -26,11 +28,17 @@ export default function ProjectCard({
       >
         {/* Prominent image taking most of the card */}
         <div className="flex-1 flex items-center justify-center mb-4 p-4">
-          <img
-            src={imageSrc}
-            alt={imageAlt}
-            className="w-full h-full object-contain max-h-40"
-          />
+          <div className="relative w-full h-full max-h-40">
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              fill
+              sizes="(max-width: 767px) 90vw, (max-width: 1023px) 45vw, 30vw"
+              className="object-contain"
+              priority={priority}
+              loading={priority ? "eager" : "lazy"}
+            />
+          </div>
         </div>
 
         {/* Left-aligned title */}
@@ -51,7 +59,7 @@ export default function ProjectCard({
 
 export function SkillPill({ skill }: { skill: string }) {
   return (
-    <span className=" bg-[#000000c0] text-white px-2! py-1! rounded text-xs  whitespace-nowrap">
+    <span className=" bg-gray-700 text-white px-2! py-1! rounded text-xs  whitespace-nowrap">
       {skill}
     </span>
   );
